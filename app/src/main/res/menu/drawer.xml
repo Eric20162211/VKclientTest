@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+    <group android:checkableBehavior="single"
+
+        >
+
+        <item
+            android:id="@+id/navigation_item_friends"
+            android:icon="@drawable/ic_action_emo_basic"
+            android:title="@string/friends"
+
+            />
+        <item
+            android:id="@+id/navigation_item_foto"
+            android:icon="@drawable/ic_action_tiles_small"
+            android:title="@string/foto" />
+        <item
+            android:id="@+id/navigation_item_messages"
+            android:icon="@drawable/ic_action_mail_white"
+            android:title="@string/messages" />
+        <item
+            android:id="@+id/navigation_item_audio"
+            android:icon="@drawable/ic_action_music_1"
+            android:title="@string/audio" />
+    </group>
+
+
+
+</menu>

@@ -1,0 +1,245 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarFriend"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:gravity="center"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/grayNew"
+        android:elevation="80dp"
+        >
+
+        <ImageView
+            android:id="@+id/ivFriend"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+             />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/ivFriend"
+            android:src="@drawable/ic_action_mail_white"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            app:backgroundTint="@color/green"
+            />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivFriend"
+            android:src="@drawable/ic_action_camera"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            app:backgroundTint="@color/orange"
+            />
+
+
+        </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:id="@+id/statusTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Статус:"
+                    android:textColor="#000"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/statusTV"
+                    android:layout_marginLeft="20dp"
+                    android:text="----------"
+                    android:textColor="#9f9f9f"
+                    android:textSize="20sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:id="@+id/cityTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Город:"
+                    android:textColor="#000"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/cityTV"
+                    android:layout_marginLeft="20dp"
+                    android:text="----------"
+                    android:textColor="#9f9f9f"
+                    android:textSize="20sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:id="@+id/contactsTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Моб.телефон:"
+                    android:textColor="#000"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/contacts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/contactsTV"
+                    android:layout_marginLeft="20dp"
+                    android:text="----------"
+                    android:textColor="#9f9f9f"
+                    android:textSize="20sp"/>
+            </RelativeLayout>
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:padding="10dp"
+            >
+            <TextView
+                android:id="@+id/homeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Доп.телефон:"
+                android:textColor="#000"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/homeTV"
+                android:layout_marginLeft="20dp"
+                android:text="----------"
+                android:textColor="#9f9f9f"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:id="@+id/universityTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Вуз:"
+                    android:textColor="#000"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/university"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/universityTV"
+                    android:layout_marginLeft="20dp"
+                    android:text="----------"
+                    android:textColor="#9f9f9f"
+                    android:textSize="20sp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:id="@+id/aboutTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="О себе:"
+                    android:textColor="#000"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/aboutTV"
+                    android:layout_marginLeft="20dp"
+                    android:text="----------"
+                    android:textColor="#9f9f9f"
+                    android:textSize="20sp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:id="@+id/quotesTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Цитаты:"
+                    android:textColor="#000"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/quotes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/quotesTV"
+                    android:layout_marginLeft="20dp"
+                    android:text="----------"
+                    android:textColor="#9f9f9f"
+                    android:textSize="20sp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
